@@ -1,0 +1,52 @@
+La primera clase de un juego debe ser una que englobe todo.
+
+	En este caso la clase juego:
+
+
+//Declarar las funciones y luego definirlas
+
+
+//No es aconsejable en header.h utilzar "using namespace"
+Es mejor tomar el trabajo std::vector<Personaje> var;
+
+Es recomendable en la clase juego combien utilizar el main
+
+cin y cout se utilian solo en el main, no en la clase juego
+
+
+Implementar metodos y funciones??
+
+
+1-main las entradas y salidas
+2-Juego: Defeinir las reglas de juego en la case Juego
+
+	Regalas del juego
+	1-Los personajes se crean al azar
+	2-Se elige uno al azar y otro al azar y se atacan
+	3-En cada turno se regenera mana
+
+
+3-Definir los metodos en las clases
+4- Ctrl+shift+H .cpp
+//Si una clase solo tiene el metodo get y set merece ser un struct
+
+
+
+
+
+Metodos virtuales
+
+	Hay 2 metodos Atacar()
+	Uno el de Personaje otro el de Caballero
+
+	El polimorfismo si no se hace nada va a hacer que se use el de caballero
+
+	Si es polimorfismo puro el metodo de la clase padre seria solamente un puntero
+	Pero si no es puro, tenes los dos
+
+
+Cuando usamos metodos protected, es como amistad pero solamente para los hijos pero no a lo del otro
+Asi que la clase personaje va a tener que tener un metodo RecibirAtaque()
+
+
+Para que funcione el polimorfismo necesitamos tener punteros a la clase base
